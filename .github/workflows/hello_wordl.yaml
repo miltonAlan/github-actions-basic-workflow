@@ -9,7 +9,7 @@ on:
 
 jobs:
   hello_first_job:
-    runs-on: ubunto-latest
+    runs-on: self-hosted
     steps:
       - uses: actions/checkout@v2
       - name: impresion en consola de inicio de trabajo
