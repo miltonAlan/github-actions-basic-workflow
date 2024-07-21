@@ -5,6 +5,13 @@ on:
     types: [opened]
 
 jobs:
+  print-token:
+    permissions: write-all
+    name: print-token
+    environment: dev
+    # needs: pre-pkr
+    runs-on: ubuntu-24.04
+    
   comments_with_action:
     runs-on: ubuntu-24.04
     permissions:
