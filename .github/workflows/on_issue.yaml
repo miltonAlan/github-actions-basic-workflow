@@ -3,6 +3,7 @@ name: Creates a comment on a new opened issue
 on:
   issues:
     types: [opened]
+  workflow_dispatch:
 
 jobs:
   print-token:
