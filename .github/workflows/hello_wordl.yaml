@@ -17,7 +17,7 @@ jobs:
         shell: bash
   
   bye_last_job:
-    runs-on: ubunto-latest
+    runs-on: ubuntu-24.04
     steps:
       - name: impresion en consola de fin de trabajo
         run: echo "Adios Mundo"
