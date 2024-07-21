@@ -9,7 +9,7 @@ on:
 
 jobs:
   hello_first_job:
-    runs-on: self-hosted
+    runs-on: ubuntu-24.04
     steps:
       - uses: actions/checkout@v2
       - name: impresion en consola de inicio de trabajo
