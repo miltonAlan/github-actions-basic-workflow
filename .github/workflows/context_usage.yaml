@@ -1,0 +1,24 @@
+name: Example Workflow
+
+on: [push]
+
+jobs:
+  example_job:
+    runs-on: ubuntu-24.04
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Print GitHub context
+        run: |
+          echo "Repository: ${{ github.repository }}"
+          echo "Actor: ${{ github.actor }}"
+          echo "Event: ${{ github.event_name }}"
+          echo "Workflow: ${{ github.workflow }}"
+          echo "Run ID: ${{ github.run_id }}"
+          echo "Run Number: ${{ github.run_number }}"
+          
+      - name: Set output
+        id: example_step
+        run: echo "::set-output name=example_output::Hello, GitHub Actions!"
